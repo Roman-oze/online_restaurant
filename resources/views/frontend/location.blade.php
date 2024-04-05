@@ -1,21 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="loca.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+@extends('layout._master')
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <title>location</title>
-
-</head>
-<body>
-    
+@section('main_content') 
     <br>
     <br>
-    <h1>Our Location <i class="fa-solid fa-location-dot"></i></h1>
+    <br>
+    <br>
+    <div class="text-center">
+        <h1>Our Location <i class="fa-solid fa-location-dot text-danger"></i></h1>
+
+    </div>
  
 
 <div class="main">
@@ -24,7 +17,7 @@
     <br>
     <div class="row">
        
-        <div class="col-md-6">
+        <div class="col-md-6 p-3">
             <div class="div1">
                 <h3>Our All Branch List Here</h3>
             </div>
@@ -56,7 +49,7 @@
                 </div>
               </div>
         </div>
-        <div class="col-md-6 map">
+        <div class="col-md-6 map p-3">
             <div class="div1">
                 <h3>Our Map</h3>
             </div>
@@ -66,42 +59,4 @@
 
 </div>
     <br>
-    <div class="container-fluid ">
-        <div class="row justify-content-center text-align">
-          
-            <div class="col-3 text-center">
-                <h4><u>Social Link</u></h4><br>
-                    <p>Home</p>
-                    <p>Pricing</p>
-                    <p>Download</p>
-                    <p>About</p>
-                    <p>Service</p><br>
-                   
-            </div>
-            <div class="col-3 text-center">
-               <u><h4>Support</h4></u><br> 
-                <p>FAQ</p>
-                <p>How it</p>
-                <p>Features</p>
-                <p>Contact</p>
-                <p>Reporting</p><br>
-            </div>
-            <div class="col-3 text-center">
-                <h4><u>Contact</u></h4><br>
-                <p>+8801759676488</p>
-                <p>Rumuislam303@gamil.com</p>
-                <p>Brahmanbaria</p><br>
-            </div>
-        </div>
-        <br>
-        <br>
-    
-        <div class="row text-center text-dark">
-           <p class="copy">copyright by design @RomanOze</p>
-        </div>  
-    </div>
-    
-
-
-</body>
-</html>
+  @endsection

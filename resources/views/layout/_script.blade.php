@@ -164,3 +164,50 @@ else{
     }
  }
 
+
+ {{-- checkout menu --}}
+ function changeQuantity(productId, change) {
+    var quantityElement = document.getElementById('quantity-' + productId);
+    var priceElement = document.getElementById('price-' + productId);
+    var currentQuantity = parseInt(quantityElement.innerHTML);
+    var unitPrice = parseFloat(priceElement.getAttribute('data-unit-price'));
+    var totalPriceElement = document.getElementById('total-price-' + productId);
+
+    // Ensure the quantity doesn't go below 1
+    if (currentQuantity + change > 0) {
+        // Update quantity
+        quantityElement.innerHTML = currentQuantity + change;
+
+        // Update total price
+        var newTotalPrice = (currentQuantity + change) * unitPrice;
+        totalPriceElement.innerHTML = '$' + newTotalPrice.toFixed(2);
+
+        // Recalculate and update total cart product count and total sum
+        updateTotalCart();
+    }
+}
+
+function updateTotalCart() {
+    var totalProductCount = 0;
+    var totalSum = 0;
+
+    // Iterate through each product in the cart
+    var cartItems = document.querySelectorAll('.listCard li');
+    cartItems.forEach(function(item) {
+        var quantity = parseInt(item.querySelector('.count').innerHTML);
+        var unitPrice = parseFloat(item.querySelector('[data-unit-price]').getAttribute('data-unit-price'));
+        var totalItemPrice = quantity * unitPrice;
+
+        // Update total product count
+        totalProductCount += quantity;
+
+        // Update total sum
+        totalSum += totalItemPrice;
+
+        document.getElementById('total-sum').innerHTML = '$' + totalSum.toFixed(2);
+        document.getElementById('total-products').innerHTML = totalProductCount;
+        document.getElementById('final_total').setAttribute("href", "http://localhost/e_delish/View/payment.php?amount="+totalSum.toFixed(2));
+        console.log(totalSum);
+    });
+
+}

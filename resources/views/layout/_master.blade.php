@@ -10,17 +10,17 @@
     
 </nav>
 <header>
-    @include("layout._header")
+    @yield('header_page')
 </header>
 
 <div>
     @yield('main_content')
 </div>
-
+<br>
+<br>
+<br>
 <footer>
-    <div class="container-fluid ">
     @include('layout._footer')
-    </div>
 </footer>
 
 <script>

@@ -20,22 +20,22 @@
     <div class="collapse navbar-collapse " id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#" active >Home</a>
+          <a class="nav-link" href="{{route('home')}}" active >Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#academic">Features</a>
+          <a class="nav-link" href="{{route('feature')}}">Features</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#certificate">Service</a>
+          <a class="nav-link" href="{{route('service')}}">Service</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#achievement">Menu</a>
+          <a class="nav-link" href="{{route('menu')}}">Menu</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#achievement">Profile</a>
+          <a class="nav-link" href="{{route('profile')}}">Profile</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#skill">Location</a>
+          <a class="nav-link" href="{{route('location')}}">Location</a>
         </li>
        
     </ul>
@@ -49,7 +49,7 @@
         </li>
       </div>
       <div class="right-padd animate__animated animate__bounce animate__repeat-2">
-        <a target="_blank" href="https://github.com/Roman-oze" class="touch btn btn-md btn-outline-success bg-success text-white">Login <i class="fa-solid fa-eye"></i></a>
+        <a target="_blank" href="{{route('login')}}" class="touch btn btn-md btn-outline-success bg-success text-white">Login <i class="fa-solid fa-eye"></i></a>
       </div>
   
   

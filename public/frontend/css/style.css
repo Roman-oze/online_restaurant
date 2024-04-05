@@ -78,12 +78,14 @@ span.r{
     text-align: start;
   }
  
-  .nav-link:hover {
-    /* color: rgb(7, 185, 126); */
-    /* color: #CF0071; */
-    color: #198754;
-     font-size:large;
-
+  .nav-link{
+    color: #beb4b4;
+     font-weight: bold;
+  }
+  .nav-link:hover{
+    color: #28e28b;
+     font-weight: bold;
+     font-size: large;
   }
   .logo{
     height:50px;
