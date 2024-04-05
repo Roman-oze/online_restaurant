@@ -10,8 +10,6 @@
  </li>
  </ul> --}}
 
-
-
  
     <a class="navbar-brand" href="#"><img src="{{asset('frontend/image/fire.png')}}" alt="" class="logo"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,7 +38,7 @@
        
     </ul>
       </div>
-      <div class="icon">
+      <div class="icon text-center">
         <li class="nav-item p-2">
           <a target="_blank" href="https://twitter.com/RomanIs77635801"><i class="fa-brands fa-twitter icon-item3 p-1"></i></a>
           <a target="_blank" href="https://www.facebook.com/islamfull.5"><i class="fa-brands fa-facebook icon-item3 p-1"></i></a>
@@ -51,6 +49,6 @@
       <div class="right-padd animate__animated animate__bounce animate__repeat-2">
         <a target="_blank" href="{{route('login')}}" class="touch btn btn-md btn-outline-success bg-success text-white">Login <i class="fa-solid fa-eye"></i></a>
       </div>
-  
+
   
     

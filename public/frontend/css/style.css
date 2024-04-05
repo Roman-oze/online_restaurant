@@ -4,7 +4,10 @@
     background-position: center;
     height: 110vh;
 }
+.icon-item3:hover{
+    color: #24a75f;
 
+}
 .banner-text{
 text-align: center;
 color: antiquewhite;
@@ -80,7 +83,7 @@ span.r{
  
   .nav-link{
     color: #beb4b4;
-     font-weight: bold;
+     font-weight: 500;
   }
   .nav-link:hover{
     color: #28e28b;
