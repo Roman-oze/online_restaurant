@@ -13,6 +13,9 @@ Route::controller(PostController::class)->group(function(){
     Route::view('/profile','frontend.profile')->name('profile');
     Route::view('/location','frontend.location')->name('location');
     Route::view('/login','frontend.login')->name('login');
+
+    Route::get('/create','customer.create')->name('create');
+    Route::get('/show','customer.show')->name('show');
     
 });
 

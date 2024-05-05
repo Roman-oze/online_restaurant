@@ -211,3 +211,32 @@ function updateTotalCart() {
     });
 
 }
+
+{{-- login and registration  form validation --}}
+document.getElementById('show-register').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('login-form').classList.add('hide');
+    document.getElementById('register-form').classList.remove('hide');
+});
+
+document.getElementById('show-login').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('login-form').classList.remove('hide');
+    document.getElementById('register-form').classList.add('hide');
+});
+
+@push('js')
+<script>
+    document.getElementById('show-register').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.getElementById('login-form').classList.add('hide');
+        document.getElementById('register-form').classList.remove('hide');
+    });
+
+    document.getElementById('show-login').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.getElementById('login-form').classList.remove('hide');
+        document.getElementById('register-form').classList.add('hide');
+    });
+</script>
+@endpush

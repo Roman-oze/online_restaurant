@@ -4,8 +4,14 @@
     background-position: center;
     height: 110vh;
 }
+.icon-item3{
+    color: #f1f3f2;
+    font-size: 2rem;
+
+}
 .icon-item3:hover{
-    color: #24a75f;
+    color: #14ec80;
+   
 
 }
 .banner-text{
@@ -383,15 +389,16 @@ padding: 10px;
     content: "";
     background: linear-gradient(
       45deg,
-      #ff0000,
+    
+      #00ffbf,
       #ff7300,
       #fffb00,
-      #48ff00,
-      #00ffd5,
-      #002bff,
-      #7a00ff,
-      #ff00c8,
-      #ff0000
+      #c4e6b6,
+      #79e2d1,
+      #3fd1f5,
+      #a466e2,
+      #ee76d4,
+      #ffd000
     );
     position: absolute;
     top: -2px;
@@ -449,3 +456,57 @@ padding: 10px;
   .menucard{
     color: #000000;
   }
+/* login and registration page */
+.loingin{
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="submit"] {
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #68856a;
+}
+.hide {
+    display: none;
+}
+h2 {
+    text-align: center;
+}
+p {
+    text-align: center;
+}
+a {
+    color: #4caf50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+a:hover {
+    color: #45a049;
+}
+.form-container {
+    padding: 20px;
+    transition: transform 0.3s ease;
+}

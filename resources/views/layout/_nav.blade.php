@@ -40,14 +40,14 @@
       </div>
       <div class="icon text-center">
         <li class="nav-item p-2">
-          <a target="_blank" href="https://twitter.com/RomanIs77635801"><i class="fa-brands fa-twitter icon-item3 p-1"></i></a>
-          <a target="_blank" href="https://www.facebook.com/islamfull.5"><i class="fa-brands fa-facebook icon-item3 p-1"></i></a>
-          <a target="_blank" href="https://www.instagram.com/rumu303?igsh=emdtbzRmNWMweGRo&utm_source=qr"><i class="fa-brands fa-instagram icon-item3 p-1"></i></a>        
-          <a target="_blank" href="https://www.linkedin.com/in/rumu-islam-97239a151/"><i class="fa-brands fa-linkedin icon-item3 p1"></i></a>        
+          <a target="_blank" href="https://twitter.com/RomanIs77635801"><i class="fa-brands fa-twitter icon-item3 p-2"></i></a>
+          <a target="_blank" href="https://www.facebook.com/islamfull.5"><i class="fa-brands fa-facebook icon-item3 p-2"></i></a>
+          <a target="_blank" href="https://www.instagram.com/rumu303?igsh=emdtbzRmNWMweGRo&utm_source=qr"><i class="fa-brands fa-instagram icon-item3 p-2"></i></a>        
+          <a target="_blank" href="https://www.linkedin.com/in/rumu-islam-97239a151/"><i class="fa-brands fa-linkedin icon-item3 p-2"></i></a>        
         </li>
       </div>
       <div class="right-padd animate__animated animate__bounce animate__repeat-2">
-        <a target="_blank" href="{{route('login')}}" class="touch btn btn-md btn-outline-success bg-success text-white">Login <i class="fa-solid fa-eye"></i></a>
+        <a target="_blank" href="{{route('login')}}" class="touch btn btn-md btn-outline-success bg-success text-white">Login  <i class="fa-solid fa-right-to-bracket"></i></a>
       </div>
 
   
